@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="375.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="financial.application.HomeController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="312.0" pickOnBounds="true">
+         <image>
+            <Image url="@1599e6af979ce5cddf1b0d8d9b3dafa0.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Summary" textAlignment="CENTER" wrappingWidth="312.22900390625">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="download" layoutX="79.0" layoutY="346.0" mnemonicParsing="false" onAction="#onDownload" prefHeight="27.0" prefWidth="155.0" text="DOWNLOAD">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="name" alignment="CENTER" layoutY="64.0" prefHeight="60.0" prefWidth="312.0" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="info" alignment="TOP_CENTER" layoutX="1.0" layoutY="64.0" prefHeight="264.0" prefWidth="312.0" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
